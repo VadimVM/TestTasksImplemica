@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CitiesRegistry {
+    /*
+    in this class we check if the City exist or not for put its in a graph
+     */
     private Map<Integer, City> citiesRegistry = new HashMap<>();
 
     public City getOrCreateCity(Integer cityIndex) {

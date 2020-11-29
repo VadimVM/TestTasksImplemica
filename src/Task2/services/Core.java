@@ -6,6 +6,10 @@ import Task2.models.City;
 import java.util.*;
 
 public class Core {
+    /*
+    algorithm Dijkstra.
+    first method - main method of app. Here we find shortest path between corresponding cities
+     */
     public static Integer getShortestPathBetweenCities(CitiesMap citiesMap, String source, String destination) {
         CitiesMap calculatedCitiesMap = Core.calculateShortestPathFromSource(citiesMap, citiesMap.getCityByName(source));
         for (City city: calculatedCitiesMap.getCites()) {
